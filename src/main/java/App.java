@@ -35,6 +35,8 @@ public class App {
         readPersonsAsObjectsFromFile(file, personListFromFile);
 
         createPersonListFromNameAndSurname(personListFromFile);
+        System.out.println();
+        System.out.println();
     }
 
     private static void createPersonListFromNameAndSurname(List<Person> personListFromFile) {
