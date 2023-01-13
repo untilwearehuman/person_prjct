@@ -11,8 +11,10 @@ import java.util.stream.Stream;
  */
 public class App {
 
-    public static final String[] FIRST_NAME = {"Ivan", "John", "Vitali", "Gena", "Kolya", "Alina", "Tanya", "Sonya"};
-    public static final String[] SECOND_NAME = {"Ivanov(a)", "Petrov(a)", "Sidorov(a)", "Popov(a)", "Kovalyov(a)"};
+    public static final String[] FIRST_NAME = {"Ivan", "John", "Vitali", "Gena", "Kolya", "Alina", "Tanya", "Sonya",
+            "Dmitry", "Lev"};
+    public static final String[] SECOND_NAME = {"Ivanov(a)", "Petrov(a)", "Sidorov(a)", "Popov(a)", "Kovalyov(a)",
+            "Nikolaev(a)", "Egorov(a)"};
     public static final int AGE_BOUND = 16;
     public static final int AGE_BOUND_INCREMENT = 15;
     public static final int PERSON_QUANTITY = 100;
@@ -29,7 +31,6 @@ public class App {
         sortPersonList(personList);
 
         File file = createFile();
-
         writePersonsAsObjectsIntoFile(personList, file);
 
         List<Person> personListFromFile = new ArrayList<>();
