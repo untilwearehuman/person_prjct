@@ -29,13 +29,14 @@ public class App {
         sortPersonList(personList);
 
         File file = createFile();
-
         writePersonsAsObjectsIntoFile(personList, file);
 
         List<Person> personListFromFile = new ArrayList<>();
         readPersonsAsObjectsFromFile(file, personListFromFile);
 
         createPersonListFromNameAndSurname(personListFromFile);
+        System.out.println();
+        System.out.println();
     }
 
     private static void createPersonListFromNameAndSurname(List<Person> personListFromFile) {
